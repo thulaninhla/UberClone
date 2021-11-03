@@ -7,20 +7,15 @@ import {
   View,
   StatusBar
 } from 'react-native';
-import { Colors } from 'react-native/Libraries/NewAppScreen';
-//import Icon from 'react-native-vector-icons/FontAwesome';
-
-//import HomeScreen from './src/screens/HomeScreen';
+import SearchResults from './src/screens/SearchResults';
 
 const App = () => {
-  
-  //const myIcon = <Icon name="rocket" size={50} color="red" />;
-  
-  return (
+    return (
     <>
     
     <StatusBar barStyle="dark-content" />
-    <Text>I am a Map</Text>
+    
+    <SearchResults />
     
     </>
   );
@@ -29,7 +24,7 @@ const App = () => {
 const styles = StyleSheet.create({
   body: {
     flex: 1,
-    backgroundColor: Colors.white,
+    backgroundColor: 'white',
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: 'gray',
