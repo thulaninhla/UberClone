@@ -6,6 +6,9 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import styles from "./styles";
 
 const UberTypeRow = (props) => {
+
+    const {type} = props;
+
     return (
            <View style={styles.container}>
 
@@ -13,7 +16,7 @@ const UberTypeRow = (props) => {
               <Image style={styles.image} source={require('../../assets/images/UberX.jpeg')} />
 
             <View style={styles.middleContainer}>
-                <Text style={styles.type}>UberX{' '}
+                <Text style={styles.type}>{type.type}{' '}
                 <Ionicons name={'person'} size={16} />
                 3
                 </Text>
@@ -24,7 +27,7 @@ const UberTypeRow = (props) => {
             <View style={styles.rightContainer}>
                 <Ionicons name={'pricetag'} size={18} color={'#49be49'} />
                 <Text style={styles.price}>
-                    est. $27
+                    est. ${type.price}
                 </Text>
             </View>
 
